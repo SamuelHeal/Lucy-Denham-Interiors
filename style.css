@@ -1,0 +1,213 @@
+
+@font-face{
+    font-family: AlexBrush;
+    src: url(./Fonts/AlexBrush-Regular.ttf)
+}
+
+
+.branding{
+    font-size: 200%;
+}
+
+.header{
+    position: sticky;
+    top: 0px;
+    background-color: rgb(255, 255, 255);
+    z-index: 9999;
+    color: black;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.2rem;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 100%;  
+    font-family: "Abril Fatface";
+    
+}
+
+.header img{
+    position: relative;
+    left: 40px;
+    width: 200px;
+    
+}
+
+nav ul {
+    position: relative;
+    top: 55px;
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    list-style-type: none;
+    
+}
+
+nav a {
+    background-color: unset;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 3px;
+    margin: 20px;
+}
+
+.a:hover{    
+    text-decoration: none;
+    color: rgb(200, 95, 241);
+}
+
+.b:hover{
+    text-decoration: none;
+    color: rgb(218, 94, 94);
+}
+
+.c:hover{
+    text-decoration: none;
+    color: rgb(107, 217, 245);
+}
+
+
+
+.main-image-container {
+    background-image: url("./Images/Beach.jpeg");
+    height: 600px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+    
+  }
+.main-image {
+    width: 600px;
+    
+}
+
+.second-image-container {
+    background-image: url("./Images/kitchen.jpeg");
+    height: 600px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+
+    
+  }
+
+.about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.about{
+    width: 70%
+}
+
+.about h4{
+    font-size: 90%;
+    margin: 10px
+}
+
+.about p{
+    font-size: 70%;
+}
+
+.quote{
+    font-style: italic;
+    font-size: 200%;
+    font-family: cursive;
+}
+
+.dreams{
+    color: rgb(200, 95, 241);
+}
+
+.realities{
+    color: rgb(218, 94, 94);
+
+}
+
+.break{
+    margin-top: 30px;
+    width: 500px;
+    
+}
+
+.services-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.services-container h3{
+    font-family: "Abril Fatface";
+    font-style: italic;
+}
+
+.services-box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: fit-content;
+    box-shadow: 1px 1px 5px 1px rgba(180, 180, 180, 0.637);
+    border-radius: 5px;
+    margin: 15px;
+    align-items: center;
+    font-size: 70%;
+
+}
+
+.service h4{
+    font-size: 20px;
+    font-family: "Abril Fatface";
+    
+}
+
+.service p{
+    width: 90%;
+    position: relative;
+    top: 10px;
+}
+
+.projects-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.projects-container h3{
+    font-family: "Abril Fatface";
+    font-style: italic;
+}
+
+@media screen and (max-width: 1000px){
+    .services-box{
+        flex-direction: column;
+    }
+    .service{
+        width: 60%;
+    }
+
+    .service p{
+        width: 90%
+    }
+    
+}
+
