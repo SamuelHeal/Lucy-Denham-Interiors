@@ -4,6 +4,13 @@
     src: url(./Fonts/AlexBrush-Regular.ttf)
 }
 
+@font-face{
+    font-family: Alcu;
+    src: url(./Fonts/Alcubierre.otf)
+}
+
+
+
 
 .branding{
     font-size: 200%;
@@ -62,14 +69,7 @@
 }
 
 .link:hover{
-    color: var(--border-1);
-}
-
-.logo {
-    font-size: 60px;
-    font-weight: 500;
-    color: black;
-    font-family: AlexBrush, cursive;
+    color: rgb(218, 94, 94);
 }
 
 .menu {
@@ -155,17 +155,23 @@ nav a {
 
 .main-image-container {
     background-image: url("./Images/Beach.jpeg");
-    height: 600px; 
+    height: 90vh; 
+    width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 50px;
     
   }
-.main-image {
-    width: 600px;
+
+  @media screen and (max-width: 860px){
+    .main-image-container{
+        background-image: url("./Images/backyard.png");
+
+    }
     
 }
+
 
 .second-image-container {
     background-image: url("./Images/kitchen.jpeg");
@@ -179,6 +185,7 @@ nav a {
   }
 
 .about-container{
+    font-family: Alcu;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,7 +223,7 @@ nav a {
 
 .break{
     margin: 40px;
-    width: 500px;
+    width: 30%;
     
 }
 
@@ -226,11 +233,11 @@ nav a {
     align-items: center;
     text-align: center;
     flex-direction: column;
+    font-family: Alcu;
 }
 
 .services-container h3{
-    font-family: "Abril Fatface";
-    font-style: italic;
+    font-weight: bolder;
 }
 
 .services-box{
@@ -251,7 +258,7 @@ nav a {
     border-radius: 5px;
     margin: 15px;
     align-items: center;
-    font-size: 70%;
+    font-size: 90%;
 
 }
 
@@ -268,6 +275,7 @@ nav a {
 }
 
 .projects-container{
+    font-family: Alcu;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -276,8 +284,7 @@ nav a {
 }
 
 .projects-container h3{
-    font-family: "Abril Fatface";
-    font-style: italic;
+    font-weight: bolder;
 }
 
 @media screen and (max-width: 1000px){
@@ -321,7 +328,7 @@ nav a {
     height: 100%;
     object-fit: cover;
     object-position: 50% 50%;
-    cursor: pointer;
+    /* cursor: pointer; */
     transition:.5s ease-in-out;
   }
   
@@ -399,7 +406,7 @@ nav a {
     grid-row: span 6;
   }
   
-  @media screen and (max-width:500px){
+  @media screen and (max-width:600px){
     .g-container{
       grid-template-columns: repeat(1,1fr);
     }
@@ -408,7 +415,7 @@ nav a {
     }
     
     .h-1,.h-2,.h-3,.h-4,.h-5,.h-6{
-    grid-row: span 3;
+    grid-row: span 2;
     }
   }
   
@@ -426,3 +433,88 @@ nav a {
       top: 50%;
     }
   }
+
+
+.contact-container{
+    font-family: Alcu;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.detailsDiv{
+    margin-bottom: 20px;
+}
+.contactMe{
+    text-decoration: none;
+    color: black;
+   
+    
+}
+
+.contactMe:hover{
+    text-decoration: none;
+    color: rgba(147, 69, 179, 0.753);
+}
+  
+.icons{
+    margin-bottom: 30px;
+}
+
+.icons ul {
+    margin:0;
+    padding:0;
+    display:flex;
+}
+  
+.icons ul li {
+    list-style: none;
+}
+
+.icons ul li a {
+    position: relative;
+    width:60px;
+    height:60px;
+    display:block;
+    text-align:center;
+    margin:0 10px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration:none;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    background: linear-gradient(0deg, #ddd, #fff);
+    transition: .5s;
+}
+
+.icons ul li a:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-decoration:none;
+}
+
+.icons ul li a .fab {
+    width: 100%;
+    height:100%;
+    display:block;
+    background: linear-gradient(0deg, #fff, #ddd);
+    border-radius: 50%;
+    line-height: calc(60px - 12px);
+    font-size:24px;
+    color: #262626;
+    transition: .5s;
+}
+
+.icons ul li:nth-child(1) a:hover .fab {
+    color: #3b5998;
+}
+
+.icons ul li:nth-child(2) a:hover .fab {
+    color: #007bb6;
+}
+
+.icons ul li:nth-child(3) a:hover .fab {
+    color: #e4405f;
+}
+
