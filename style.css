@@ -161,7 +161,16 @@ nav a {
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 50px;
+    z-index: -10;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     
+  }
+
+  .hidden2 {
+      display: none;
   }
 
   @media screen and (max-width: 860px){
@@ -180,6 +189,11 @@ nav a {
     background-position: center;
     background-repeat: no-repeat;
     margin-top: 50px;
+    z-index: -10;
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
 
     
   }
@@ -259,6 +273,8 @@ nav a {
     margin: 15px;
     align-items: center;
     font-size: 90%;
+    padding: 10px
+
 
 }
 
@@ -272,6 +288,7 @@ nav a {
     width: 90%;
     position: relative;
     top: 10px;
+
 }
 
 .projects-container{
@@ -292,7 +309,8 @@ nav a {
         flex-direction: column;
     }
     .service{
-        width: 60%;
+        width: 90%;
+        /* padding: 10px */
     }
 
     .service p{
