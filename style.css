@@ -162,25 +162,12 @@ nav a {
     z-index: -10;
     background-size: cover;
     -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    -moz-background-size: contain;
+    -o-background-size: contain;
     
   }
 
-  .hidden2 {
-      display: none;
-  }
-
-  @media screen and (max-width: 860px){
-    .main-image-container{
-        background-image: url("./Images/backyard.png");
-
-    }
-    
-}
-
-
-.second-image-container {
+  .second-image-container {
     background-image: url("./Images/kitchen.jpeg");
     height: 600px; 
     background-attachment: fixed;
@@ -195,6 +182,17 @@ nav a {
 
     
   }
+
+  @media screen and (max-width: 860px){
+    .main-image-container{
+        background-image: url("./Images/backyard.png");
+        height: 600px;
+    }
+    
+}
+
+
+
 
 .about-container{
     font-family: Alcu;
