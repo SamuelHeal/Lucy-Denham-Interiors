@@ -186,7 +186,8 @@ nav a {
   @media screen and (max-width: 860px){
     .main-image-container{
         background-image: url("./Images/backyard.png");
-        height: 600px;
+        background-attachment: initial;
+        height: 400px
     }
     
 }
