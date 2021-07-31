@@ -56,10 +56,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    list-style-type: none;
+    position: relative;
 }
 
 .item {
-    margin-left: 5rem;
+    margin: auto;
 }
 
 .link{
@@ -73,10 +75,13 @@
 }
 
 .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     left: -100%;
     top: 110px;
-    flex-direction: column;
     background-color: #fff;
     width: 100%;
     border-radius: 10px;
@@ -132,6 +137,8 @@ nav a {
     text-decoration: none;
     border-radius: 3px;
     margin: 20px;
+    position: relative;
+    left: -25px
 }
 
 .a:hover{    
@@ -191,7 +198,8 @@ nav a {
     }
 
     .second-image-container {
-        display: none;
+        background-attachment: initial;
+        height: 300px
     }
     
 }
