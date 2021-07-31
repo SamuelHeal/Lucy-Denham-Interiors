@@ -10,8 +10,19 @@
 }
 
 
+html {
+    scroll-behavior: smooth;
+}
 
+#services {
+    position: relative;
+    top: -50px
+}
 
+#projects {
+    position: relative;
+    top: -50px
+}
 .branding{
     font-size: 200%;
 }
